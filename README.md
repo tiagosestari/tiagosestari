@@ -1,4 +1,4 @@
-https://github.com/tiagosestari/tiagosestari/blob/master/images/tiago_sestari.jpg
+![Image of cover]https://github.com/tiagosestari/tiagosestari/blob/master/images/tiago_sestari.jpg
 
 <!--
 **tiagosestari/tiagosestari** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
