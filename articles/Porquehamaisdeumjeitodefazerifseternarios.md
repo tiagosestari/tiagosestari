@@ -10,7 +10,7 @@ diferentes, por exemplo, condicionais.
 
 ##### Talvez você tenha se perguntado qual a diferença entre usar um *if* normal
 
-```
+```javascript
 	if ( a > 0 ) {
 		return a;
 		} else {
@@ -19,7 +19,7 @@ diferentes, por exemplo, condicionais.
 ```
 ##### E um *if* ternário
 
-```
+```javascript
 	(a > 0 ? a : false)
 
 ```
@@ -37,7 +37,7 @@ código de um condicional (if) compõe um statement.
 Já uma Expression, são linhas de código que quando avaliadas retornam um valor. Por
 exemplo quando escrevemos o seguinte código 
 
-```
+```javascript
 	let a = (1==2);
 	console.log(a);
 	
@@ -65,7 +65,7 @@ o valor (seja para condição verdadeira ou falsa) é retornado.
 Na prática isso quer dizer que um *if normal* não pode ser salvo em uma variável. Não é
 possível declarar o seguinte código:
 
-```
+```javascript
 	let a = if (b > 0) { ... }
 	//retorna o erro: SyntaxError: Unexpected token 'if'
 ```
@@ -73,7 +73,7 @@ Isso porque esse *if* não retorna nada que possa ser salvo na variável.
 
 Mas usando a expression do if ternário:
 
-```	
+```javascript	
 	let b = 10;
 	let a = (b > 0 ? true : false)
 	console.log(a);
