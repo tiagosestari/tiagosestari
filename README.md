@@ -1,11 +1,16 @@
 ![Image of cover](https://github.com/tiagosestari/tiagosestari/blob/master/images/tiago_sestari.png)
+
+## Sobre mim
 - 😄 Eu sei Node, React e Python.
 - 🔭 Estou trabalhando com arquitetura de integração, mentoria e instrução.
 - 🌱 Estou aprendendo Docker, Kubernetes e Swift para mobile.
 
-### Meus artigos
-- []
-- []
+## Meus artigos
+#### Ideias
+- [A mudança do papel da filosofia na Engenharia](docs/A mudança do papel da filosofia na Engenharia.md)
+#### Tutoriais
+- [Porque há mais de um jeito de fazer (if's e ternários)](articles/Porque há mais de um jeito de fazer (if's e ternários).md)
+
 
 <!--
 **tiagosestari/tiagosestari** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
