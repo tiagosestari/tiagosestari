@@ -7,9 +7,9 @@
 
 ## Meus artigos
 #### Ideias
-- [A mudança do papel da filosofia na Engenharia](docs/A mudança do papel da filosofia na Engenharia.md)
+- [A mudança do papel da filosofia na Engenharia](docs/AmudançadopapeldafilosofianaEngenharia.md)
 #### Tutoriais
-- [Porque há mais de um jeito de fazer (if's e ternários)](articles/Porque há mais de um jeito de fazer (if's e ternários).md)
+- [Porque há mais de um jeito de fazer (if's e ternários)](articles/Porquehamaisdeumjeitodefazerifseternarios.md)
 
 
 <!--
