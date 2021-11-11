@@ -3,8 +3,8 @@
 ## Sobre mim
 - 😄 Eu sei Node, React e Python.
 - 🔭 Estou trabalhando com arquitetura de integração, mentoria e instrução.
-- 🌱 Estou aprendendo Docker, Kubernetes e Swift para mobile.
-
+- 🌱 Estou aprendendo Scala, Kubernetes e GraphQL.
+- 
 ## Meus artigos
 #### Ideias
 - [A mudança do papel da filosofia na Engenharia](articles/AmudancadopapeldafilosofianaEngenharia.md)
