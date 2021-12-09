@@ -2,9 +2,12 @@
 
 ## Sobre mim
 - 😄 Eu sei Node, React e Python.
-- 🔭 Estou trabalhando com arquitetura de integração, mentoria e instrução.
-- 🌱 Estou aprendendo Scala, Kubernetes e GraphQL.
-- 
+- 🔭 Estou trabalhando com arquitetura de integração, engenharia de dados, treinamento, instrução e mentoria.
+- 🌱 Estou aprendendo Kubernetes e GraphQL.
+
+
+
+<!--
 ## Meus artigos
 #### Ideias
 - [A mudança do papel da filosofia na Engenharia](articles/AmudancadopapeldafilosofianaEngenharia.md)
@@ -12,7 +15,6 @@
 - [Porque há mais de um jeito de fazer (if's e ternários)](articles/Porquehamaisdeumjeitodefazerifseternarios.md)
 
 
-<!--
 **tiagosestari/tiagosestari** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
 Here are some ideas to get you started:
