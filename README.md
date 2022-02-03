@@ -2,7 +2,7 @@
 
 ## Sobre mim
 - 😄 Eu sei Node, React e Python.
-- 🔭 Estou trabalhando com arquitetura de integração, engenharia de dados, treinamento, instrução e mentoria.
+- 🔭 Estou trabalhando com arquitetura de integração, engenharia de software, treinamento, instrução e mentoria.
 - 🌱 Estou aprendendo Kubernetes e GraphQL.
 
 
