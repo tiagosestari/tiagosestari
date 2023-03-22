@@ -1,0 +1,83 @@
+SQL triggers are powerful database objects that can be used to automate database operations and enforce data integrity. In this article, we will discuss the different types of triggers and provide examples of each type using MySQL syntax.
+
+Types of Triggers:
+
+Auditing Triggers: Auditing triggers are used to track changes made to the data in a table. This can be useful for maintaining an audit trail or for debugging purposes.
+Example:
+Let's say we have a table named "employees" with columns such as "id", "name", "salary", and "last_modified_date". We can create a trigger that automatically updates the "last_modified_date" column whenever a row in the "employees" table is updated. Here's an example SQL code for such a trigger using MySQL syntax:
+
+sql
+Copy code
+CREATE TRIGGER tr_Update_Employees
+AFTER UPDATE ON employees
+FOR EACH ROW
+BEGIN
+   UPDATE employees
+   SET last_modified_date = NOW()
+   WHERE id = NEW.id;
+END;
+Data Validation Triggers: Data validation triggers are used to enforce data integrity constraints such as check constraints or referential integrity.
+Example:
+Let's say we have a table named "orders" with columns such as "order_id", "order_date", "customer_id", and "total_amount". We can create a trigger that prevents any order with a total amount greater than $10,000 from being inserted into the "orders" table. Here's an example SQL code for such a trigger using MySQL syntax:
+
+sql
+Copy code
+CREATE TRIGGER tr_Validate_Order_Amount
+BEFORE INSERT ON orders
+FOR EACH ROW
+BEGIN
+   IF NEW.total_amount > 10000 THEN
+      SIGNAL SQLSTATE '45000' 
+      SET MESSAGE_TEXT = 'Order amount cannot be greater than $10,000';
+   END IF;
+END;
+Data Transformation Triggers: Data transformation triggers are used to modify data before or after it is inserted, updated, or deleted in a table.
+Example:
+Let's say we have a table named "products" with columns such as "product_id", "product_name", and "price". We can create a trigger that converts the price from US dollars to Euros whenever a new product is inserted into the "products" table. Here's an example SQL code for such a trigger using MySQL syntax:
+
+sql
+Copy code
+CREATE TRIGGER tr_Convert_Price_To_Euros
+BEFORE INSERT ON products
+FOR EACH ROW
+BEGIN
+   SET NEW.price = NEW.price * 0.85;
+END;
+Referential Integrity Triggers: Referential integrity triggers are used to enforce referential integrity constraints between tables.
+Example:
+Let's say we have two tables named "orders" and "order_details". The "order_details" table has a foreign key constraint on the "order_id" column, which references the "order_id" column in the "orders" table. We can create a trigger that prevents any order details from being deleted if there are corresponding records in the "order_details" table. Here's an example SQL code for such a trigger using MySQL syntax:
+
+sql
+Copy code
+CREATE TRIGGER tr_Prevent_Order_Details_Deletion
+BEFORE DELETE ON orders
+FOR EACH ROW
+BEGIN
+   IF EXISTS (SELECT * FROM order_details WHERE order_id = OLD.order_id) THEN
+      SIGNAL SQLSTATE '45000' 
+      SET MESSAGE_TEXT = 'Cannot delete orders with corresponding order details';
+   END IF;
+END;
+
+Synchronization Triggers: Synchronization triggers are used to maintain consistency between related tables.
+Example:
+Let's say we have two tables named "customers" and "invoices". The "invoices" table has a foreign key constraint on the "customer_id" column, which references the "customer_id" column in the "customers" table. We can create a trigger that automatically updates the total amount due by a customer whenever a new invoice is inserted or updated in the "invoices" table. Here's an example SQL code for such a trigger using MySQL syntax:
+
+sql
+Copy code
+CREATE TRIGGER tr_Update_Customer_Total_Amount_Due
+AFTER INSERT, UPDATE ON invoices
+FOR EACH ROW
+BEGIN
+   UPDATE customers
+   SET total_amount_due = (SELECT SUM(total_amount) FROM invoices WHERE customer_id = NEW.customer_id)
+   WHERE customer_id = NEW.customer_id;
+END;
+Conclusion:
+
+In conclusion, SQL triggers can be used for a variety of purposes such as data auditing, validation, transformation, referential integrity, and synchronization. By using triggers, you can automate database operations and enforce data integrity, thus making your database more reliable and efficient. With the examples provided in this article using MySQL syntax, you should now have a good understanding of how to use triggers in your own database applications.
+
+--
+
+
+
